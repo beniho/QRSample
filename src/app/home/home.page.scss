@@ -1,27 +1,51 @@
-#container {
-  text-align: center;
+// ********************* インスタっぽい感じに合う色にしたかっただけです・・・ ********************* //
+ion-content {
+  --background: linear-gradient(60deg, #fd562c 0%, #c73ff1 70%) no-repeat;
+}
 
+ion-toolbar {
+  --background: transparent;
+  --border-style: none;
+  --ion-color-base: transparent !important;
+}
+
+ion-title, ion-input, #btnShare {
+  --color: white;
+}
+
+#btnDisp {
+  height:30px;
+  --color: black;
+  --background: white;
+  --background-activated: #d7d8da;
+  --background-focused: #d7d8da;
+  --background-hover: #d7d8da;
+}
+
+#grpTxtBtn {
+  display: flex;
+  margin: 10px;
+  border-bottom: solid white 1px;
+}
+// ********************* インスタっぽい感じに合う色にしたかっただけです・・・ ********************* //
+
+#QR {
+  position: relative;
+  background-color: white; 
+  width: 270px;
+  height: 270px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#canvas {
   position: absolute;
-  left: 0;
+  width: 250px;
+  height: 250px;
+  top: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
